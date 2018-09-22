@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PluginHost</string>
+    <string name="str_1">string_1</string>
+    <string name="str_2">string_2</string>
+    <string name="str_3">string_3</string>
+    <string name="str_4">string_4</string>
+    <string name="str_5">string_5</string>
+</resources>
