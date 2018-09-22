@@ -1,5 +1,6 @@
 package com.lilee.plugin.host;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(newBase);
-        Utils.extractAssets(this,apkName);
+        Utils.extractAssets(this, apkName);
     }
 
     @Override
@@ -48,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setClassName(MainActivity.this, "com.lilee.plugin.first.MainActivity");
                 startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.btn_startService).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent();
+                intent.setClassName(MainActivity.this, "com.lilee.plugin.first.PluginService");
+                startService(intent);
+
             }
         });
 

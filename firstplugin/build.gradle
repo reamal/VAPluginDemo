@@ -63,6 +63,6 @@ apply plugin: 'com.didi.virtualapk.plugin'
 virtualApk {
     packageId = 0x6f             // The package id of Resources.
     ///Users/lilee/iFiles/android/codes/AsProjects/PluginHost/app
-    targetHost = '../PluginHost/app' // The path of application module in host project.
+    targetHost = '../VAPluginDemo/app' // The path of application module in host project.
     applyHostMapping = true      // [Optional] Default value is true.
 }
