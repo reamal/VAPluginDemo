@@ -6,6 +6,8 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.lilee.plugin.lib.IMyInterface;
+
 public class PluginService extends Service{
 
     private MyBinder binder = new MyBinder();

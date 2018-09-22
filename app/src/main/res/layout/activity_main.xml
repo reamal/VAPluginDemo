@@ -44,4 +44,25 @@
         android:text="startPluginService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_stopService"
+        android:textAllCaps="false"
+        android:text="stopPluginService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_bindService"
+        android:textAllCaps="false"
+        android:text="bindPluginService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_unbindService"
+        android:textAllCaps="false"
+        android:text="unbindPluginService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
