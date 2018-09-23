@@ -65,4 +65,11 @@
         android:text="unbindPluginService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_cpInsert"
+        android:textAllCaps="false"
+        android:text="cpInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -17,8 +17,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".PluginService"/>
+        <service android:name=".PluginService" />
 
+        <provider
+            android:name=".CProvider"
+            android:authorities="com.lilee.plugin.first.Lilee"
+            android:exported="true"></provider>
     </application>
 
 </manifest>
