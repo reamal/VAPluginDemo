@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    resourcePrefix "a_"
+
     compileSdkVersion VERSION_COMPILE_SDK
     buildToolsVersion VERSION_BUILD_TOOLS
 

@@ -4,11 +4,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/a_ic_launcher"
+        android:label="@string/a_app_name"
+        android:roundIcon="@mipmap/a_ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/a_AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,18 @@
         <provider
             android:name=".CProvider"
             android:authorities="com.lilee.plugin.first.Lilee"
-            android:exported="true"></provider>
+            android:exported="true">
+
+        </provider>
+
+        <receiver
+            android:name=".PluginReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="plugin_receiver_one" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

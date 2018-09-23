@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "liTag";
     String apkName = "firstplugin-beijing-release.apk";
-    // demo ContentProvider 的URI
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 PluginManager.getInstance(this).loadPlugin(apk);
             } catch (Exception e) {
+                e.printStackTrace();
                 Log.e(TAG, e.getMessage());
             }
         } else {
@@ -58,11 +58,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_unbindService).setOnClickListener(v -> unbindService());
         findViewById(R.id.btn_stopService).setOnClickListener(v -> stopService());
         findViewById(R.id.btn_cpInsert).setOnClickListener(v -> cpInsert());
+        findViewById(R.id.btn_sendBroadcastReceiver).setOnClickListener(v -> sendBroadcastReceiver());
 
     }
 
-    private void cpInsert() {
+    private void sendBroadcastReceiver() {
+        sendBroadcast(new Intent("plugin_receiver_one"));
+    }
 
+    private void cpInsert() {
         String pkg = "com.lilee.plugin.first";
         LoadedPlugin plugin = PluginManager.getInstance(this).getLoadedPlugin(pkg);
         Uri cpUri = Uri.parse("content://com.lilee.plugin.first.Lilee");

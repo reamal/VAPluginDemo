@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FirstPlugin</string>
+    <string name="a_app_name">FirstPlugin</string>
     <string name="a_str_1">string_one</string>
     <string name="a_str_2">string_two</string>
     <string name="a_str_3">string_three</string>
